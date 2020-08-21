@@ -1,0 +1,89 @@
+1. The value of correlation coefficient will always be:
+A) between 0 and 1 B) greater than -1
+C) between -1 and 1 D) between 0 and -1
+
+Answer - (C)
+
+2. Which of the following cannot be used for dimensionality reduction?
+A) Lasso Regularisation B) PCA
+C) Recursive feature elimination D) Ridge Regularisation
+
+Answer - (C)
+
+3. Which of the following is not a kernel in Support Vector Machines?
+A) linear B) Radial Basis Function
+C) hyperplane D) polynomial
+
+Answer - (C)
+4. Amongst the following, which one is least suitable for a dataset having non-linear decision boundaries?
+A) Logistic Regression B) Naïve Bayes Classifier
+C) Decision Tree Classifier D) Support Vector Classifier
+
+Answer -- (A)
+5. In a Linear Regression problem, ‘X’ is independent variable and ‘Y’ is dependent variable, where ‘X’ represents
+weight in pounds. If you convert the unit of ‘X’ to kilograms, then new coefficient of ‘X’ will be?
+(1 kilogram = 2.205 pounds)
+A) 2.205 × old coefficient of ‘X’ B) same as old coefficient of ‘X’
+C) old coefficient of ‘X’ ÷ 2.205 D) Cannot be determined
+
+Answer - (C)
+6. As we increase the number of estimators in ADABOOST Classifier, what happens to the accuracy of the model?
+A) remains same B) increases
+C) decreases D) none of the above
+
+Answer - (B)
+7. Which of the following is not an advantage of using random forest instead of decision trees?
+A) Random Forests reduce overfitting
+B) Random Forests explains more variance in data then decision trees
+C) Random Forests are easy to interpret
+D) Random Forests provide a reliable feature importance estimate
+
+Answer -(B)
+
+
+8. Which of the following are correct about Principal Components?
+A) Principal Components are calculated using supervised learning techniques
+B) Principal Components are calculated using unsupervised learning techniques
+C) Principal Components are linear combinations of Linear Variables.
+D) All of the above
+
+Answer-- (B)(C)
+9. Which of the following are applications of clustering?
+A) Identifying developed, developing and under-developed countries on the basis of factors like GDP, poverty
+index, employment rate, population and living index
+B) Identifying loan defaulters in a bank on the basis of previous years’ data of loan accounts.
+C) Identifying spam or ham emails
+D) Identifying different segments of disease based on BMI, blood pressure, cholesterol, blood sugar levels.
+
+Answer--(A)(B)(C)(D)
+10. Which of the following is(are) hyper parameters of a decision tree?
+A) max_depth B) max_features
+C) n_estimators D) min_samples_leaf
+
+Answer--(A)(D)
+
+11. What are outliers? Explain the Inter Quartile Range(IQR) method for outlier detection.
+Answer- Outliers are those which lies an abnormal distance from other values in a random sample from a population.
+
+IQR is used to measure variability by dividing a data set into quartiles. The data is sorted in ascending order and split into 4 equal parts. Q1, Q2, Q3 called first, second and third quartiles are the values which separate the 4 equal parts.
+Q1(median of the dataset) represents the 25th percentile of the data.Q2(median of n smallest data points) represents the 50th percentile of the data.Q3(median of n highest data points) represents the 75th percentile of the data.
+If a dataset has 2n / 2n+1 data points
+IQR is the range between the first and the third quartiles namely Q1 and Q3: IQR = Q3 – Q1. The data points which fall below Q1 – 1.5 IQR or above Q3 + 1.5 IQR are outliers.
+
+
+12.What is the primary difference between bagging and boosting algorithms?
+Answer-  Boosting is an iterative technique which adjusts the weight of an observation based on the last classification.
+ Bagging is a way to decrease the variance in the prediction by generating additional data for training from dataset using combinations with repetitions to produce multi-sets of the original data.
+
+13. What is adjusted R2 in logistic regression. How is it calculated?
+Answer- R2 is a statistical measure that represents the proportion of the variance for a dependent variable that's explained by an independent variable or variables in a regression model.The adjusted R-2 is a modified version of R-2 that has been adjusted for the number of predictors in the model. The adjusted R-2 increases only if the new term improves the model more than would be expected by chance. It decreases when a predictor improves the model by less than expected by chance.
+Adjusted R-squared value can be calculated based on value of r-squared, number of independent variables (predictors), total sample size.
+
+14.What is the difference between standardisation and normalisation?
+Answer-  standardization transforms data to have a mean of zero and a standard deviation of 1.
+Normalization usually means to scale a variable to have a values between 0 and 1.
+
+15. What is cross-validation? Describe one advantage and one disadvantage of using cross-validation.
+Answer- Cross validation is a technique for evaluating machine learning models by training several models on subsets of the available input data and evaluating them on the complementary subset of the data.
+Advantage-the proportion of the validation or training split is not dependent on the number of folds (K-fold test).
+Disadvantage-There are chances that you might miss out some observations whereas you might select some observations more than once.
