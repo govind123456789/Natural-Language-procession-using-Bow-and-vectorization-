@@ -1,0 +1,94 @@
+WORKSHEET-3 SQL Refer the following ERD and answer all the questions in this worksheet. You have to write the queries using mysql for the required Operation. 
+ 
+1. Write SQL query to create table Customers. 
+ANSWER - CREATE TABLE customers(
+   customerNumber int,
+   customerName str,
+   contactLastName str,
+   contactFirstName str,
+   phone int,
+   addressLine1 str,
+   addressLine2 str,
+   city str,
+   state str,
+   postalCode int,
+   country str,
+   salesRepEmployeeNumber int,
+   creditLimit float ,
+   PRIMARY KEY( customerNumber )
+);
+2. Write SQL query to create table Orders.
+ANSWER - CREATE TABLE orders(
+      orderNumber int,
+      orderDate DATE,
+     requiredDate DATE,
+    shippedDate DATE ,
+    status str,
+    comments str,
+    customerNumber int,
+   PRIMARY KEY( orderNumber )
+);
+
+ 3. Write SQL query to show all the columns data from the Orders Table.        
+Answer -SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME='orders';
+4. Write SQL query to show all the comments from the Orders Table. 
+ANSWER- SELECT comments
+	  FROM orders;
+5. Write a SQL query to show orderDate and Total number of orders placed on that date, from Orders table.
+ANSWER- SELECT COUNT(orderDate)
+FROM orders
+WHERE orderDate= 'dd-mm-yyyy';
+ 6. Write a SQL query to show employeNumber, lastName, firstName of all the employees from employees table. 
+ANswer -SELECT employeNumber, lastName, firstName 
+	  FROM employees;
+
+7. Write a SQL query to show all orderNumber, customerName of the person who placed the respective order.
+Answer -SELECT ID, customerName , customerName 
+   FROM customers, orders
+   WHERE  orderNumber  = customerNumber ;
+ 8. Write a SQL query to show name of all the customers in one column and salerepemployee name in another   column. 
+SELECT ID, customerName , lastName,firstName 
+   FROM customers, employees
+   WHERE  employeeNumber  = salesRepEmployeeNumber ;
+
+9. Write a SQL query to show Date in one column and total payment amount of the payments made on that date from the payments table. 
+Answer -SELECT  paymentDate , SUM(amount)AS totalamount
+   FROM payments
+  10. Write a SQL query to show all the products productName, MSRP, productDescription from the products table. 
+ANswer -SELECT employeNumber, lastName, firstName 
+	  FROM products ;
+
+11. Write a SQL query to print the productName, productDescription of the most ordered product.
+SELECT productName, productDescription
+   FROM  orderdetails ,products 
+WHERE productCode = productName
+     AND quantityOrdered=
+     (
+       SELECT MAX(quantityOrdered)
+         FROM orderdetails     );
+12. Write a SQL query to print the city name where maximum number of orders were placed.
+Answer -  SELECT DISTINCT city
+   FROM  customers ,orders,orderdetails
+WHERE customerNumber =    orderNumber
+ AND quantityOrdered=
+     (
+       SELECT MAX(quantityOrdered)
+         FROM orderdetails
+         WHERE orderNumber = productCode
+     );
+13. Write a SQL query to get the name of the state having maximum number of customers. 
+Answers -SELECT     state
+             COUNT(state) 
+    FROM     customers
+    GROUP BY state
+    ORDER BY state DESC
+    LIMIT    1;
+14. Write a SQL query to print the employee number in one column and Full name of the employee in the second column for all the employees. 
+ ANswer-  SELECT employeeNumber , firstName +" "+ lastName AS FullName
+FROM employees;
+15. Write a SQL query to print the orderNumber, customer Name and total amount paid by the customer for that order (quantityOrdered × priceEach).
+Answer - SELECT orderNumber , customerName , quantityOrdered*priceEach AS total amount
+FROM orders ,customers ,orderdetails
+WHERE customerNumber = customerName;
