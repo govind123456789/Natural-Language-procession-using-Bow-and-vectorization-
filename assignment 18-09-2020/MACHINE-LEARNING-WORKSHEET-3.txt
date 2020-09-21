@@ -82,5 +82,8 @@ Adaboost ---> Adaboost requires users specify a set of weak learners (alternativ
 
 15.  Can we use Logistic Regression for classification of Non-Linear Data? If 
 not, why?
-Answer -- Yes we can use Logistic Regression for classification of Non-Linear Data .Logistic regression is known and used as a linear classifier. It is used to come up with a hyperplane in feature space to separate observations that belong to a class from all the other observations that do not belong to that class. The decision boundary is thus linear. Robust and efficient implementations are readily available (e.g. scikit-learn) to use logistic regression as a linear classifier.
+Answer -- We cannot use Logistic Regression for classification of Non-Linear Data because the decision boundary
+produced by logistic regression is linear and if we have nonlinear data where we have nonlinear decision
+boundaries then if we try to use the logistic regression it will perform poor on the data, as the decision boundary
+in the data is nonlinear
 
