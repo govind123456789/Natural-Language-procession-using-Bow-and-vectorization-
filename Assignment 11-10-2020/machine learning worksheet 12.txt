@@ -1,0 +1,34 @@
+
+Answer 1. A) GridSearchCV() 
+Answer 2  B) Adaboost 
+Answer 3 B) The regularization will decrease 
+Answer 4. D) None of the above 
+Answer 5.C) In case of classification problem, the prediction is made by taking mode of the class labels predicted by the component trees 
+Answer 6. C) Both of them 
+Answer 7. C)both bias and variance increase 
+Answer 8. C) model is performing good 
+
+Answer 9. For Var1 == 1
+Gini Index here is 1-((4/10)^2 + (6/10)^2) = 0.48
+
+Entropy =-(4/10 log2 4/10 + 6/10log2 6/10)=-(-0.15-0.133)=0.28
+Answer 10.Random forests are a strong modeling technique and much more robust than a single decision tree. They aggregate many decision trees to limit overfitting as well as error due to bias and therefore yield useful results .
+Random forests consist of multiple single trees each based on a random sample of the training data. They are typically more accurate than single decision trees. 
+Both decision trees and random forests can be used effectively when modelling regression-based data. However, random forests are more likely to be effective when the model has many features where the importance across each is more balanced .
+
+Answer 11. Feature Scaling or Standardization: It is a step of Data Pre Processing which is applied to independent variables or features of data. It basically helps to normalise the data within a particular range. Sometimes, it also helps in speeding up the calculations in an algorithm .
+Techniques used in scaling:== The most common techniques of feature scaling are Normalization and Standardization. Normalization is used when we want to bound our values between two numbers, typically, between [0,1] or [-1,1]. While Standardization transforms the data to have zero mean and a variance of 1, they make our data unitless. 
+
+Answer 12. feature scaling helps in causing Gradient Descent to converge much faster as standardizing all the variables on to the same scale, for example, for a linear regression makes it easy to calculate the slope ( y = mx + c) (where we normalize the M parameter to converge faster) 
+
+
+. Answer 13 . The F-measure, or more generally the F?F? score (F1 score) is a much better measure when false postives and false negatives have different costs. In some applications, you really care about not missing any positive cases, and really bringing down your number of false negatives, eg. when you are a doctor testing for a disease. In this case you weigh recall more. In other cases you want to be really precise and not claim anything to be positive unless you are really sure, for instance in the justice system. I
+The F measure is also resilient to class imbalance. If your dataset has very few positives and a lot many negatives, labeling everything as negative will give you high accuracy, but zero F-score. In 
+most applications, a classifier that labels everything as a negative is a pretty terrible classifier and so should evaluate poorly. 
+
+Answer 14. F1 score is a measure of a test's accuracy. It is calculated from the precision and recall of the test, where the precision is the number of correctly identified positive results divided by the number of all positive results, 
+including those not identified correctly, and the recall is the number of correctly identified positive results divided by the number of all samples that should have been identified as positive.   F-Measure = (2 * Precision * Recall) / (Precision + Recall)
+
+
+Answer15.  The fit() function calculates the values of these parameters. The transform function applies the values of the parameters on the actual data and gives the normalized value. The fit_transform() function performs both in the same step. Note that the same value is got whether we perform in 2 steps or in a single step. 
+
