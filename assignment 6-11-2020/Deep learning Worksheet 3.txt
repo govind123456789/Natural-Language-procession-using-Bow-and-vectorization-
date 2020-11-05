@@ -1,0 +1,50 @@
+Answer1.B)
+Answer2. A)
+Answer 3. B)
+Answer 4 D)
+Answerv5 C)
+Answer 6 B)
+Answer 7 B)
+Answer 8 D)
+Answer 9 B),C)
+Answer 10 B),D)
+Answer 11)
+Activation functions are really important for a Artificial Neural Network to learn and make sense of something really complicated and Non-linear complex functional mappings between the inputs and response variable.They introduce non-linear properties. Their main purpose is to convert a input signal of a node in a A-NN to an output signal.
+If we do not apply a Activation function then the output signal would simply be a simple linear function.A linear function is just a polynomial of one degree. a linear equation is easy to solve but they are limited in their complexity and have less power to learn complex functional mappings from data. A Neural Network without Activation function would simply be a Linear regression Model, which has limited power and does not perform good most of the times.
+
+Answer 12)
+Forward propagation is where you would give a certain input to your neural network, say an image or text. The network will calculate the output by propagating the input signal through its layers. In other words, the output form one layer becomes the input to the next one, where the output from the last one is the “answer”.
+In order to do that accurately, the network needs to be trained. This is done through backpropagation. Basically, during training all the parameters of the network’s layers need to be updated (“optimized”). For this reason, the network needs to know in what “direction” the update should go thus it needs to calculate the so-called gradient with respect to a function known as the loss function, which is a way of saying how “wrong” or “incorrect” the network still is, so hopefully it becomes better next time. Since finding the gradients of all the parameters with respect to this loss function is a complex equation involving the so-called “chain rule”, in computation it is being propagated, where every layer adds its own contribution to that gradient, starting from the last one (hence the name).
+
+Answer 13)
+Gradient -The goal of the gradient descent is to minimise a given function which, in our case, is the loss function of the neural network. To achieve this goal, it performs two steps iteratively. 
+	1.Compute the slope (gradient) that is the first-order derivative of the function at the current point
+2.Move-in the opposite direction of the slope increase from the current point by the computed amount
+Batch Gradient Descent -In Batch Gradient Descent, all the training data is taken into consideration to take a single step. We take the average of the gradients of all the training examples and then use that mean gradient to update our parameters. So that’s just one step of gradient descent in one epoch. 
+ Stochastic Gradient descent - In Stochastic Gradient Descent (SGD), we consider just one example at a time to take a single step. We do the following steps in one epoch for SGD:
+1. Take an example
+2. Feed it to Neural Network
+3. Calculate it’s gradient
+4. Use the gradient we calculated in step 3 to update the weights
+5. Repeat steps 1–4 for all the examples in training dataset
+Mini Batch Gradient Descent -We use a batch of a fixed number of training examples which is less than the actual dataset and call it a mini-batch. Doing this helps us achieve the advantages of both the former variants we saw. So, after creating the mini-batches of fixed size, we do the following steps in one epoch:
+1. Pick a mini-batch
+2. Feed it to Neural Network
+3. Calculate the mean gradient of the mini-batch
+4. Use the mean gradient we calculated in step 3 to update the weights
+5. Repeat steps 1–4 for the mini-batches we created
+
+
+Answer14)
+Mini Batch Gradient Descent Batch : A Compromise
+Easily fits in the memory.
+It is computationally efficient.
+Benefit from vectorization.
+If stuck in local minimums, some noisy steps can lead the way out of them.
+Average of the training samples produces stable error gradients and convergence.
+
+Answer 15)
+Transfer learning is a machine learning method where a model developed for a task is reused as the starting point for a model on a second task.
+It is a popular approach in deep learning where pre-trained models are used as the starting point on computer vision and natural language processing tasks given the vast compute and time resources required to develop neural network models on these problems and from the huge jumps in skill that they provide on related problems.
+In this post, you will discover how you can use transfer learning to speed up training and improve the performance of your deep learning model.
+
