@@ -1,0 +1,24 @@
+ANSWER  1.  A)
+ANSWER  2.  A),B)
+ANSWER  3.  B)
+ANSWER  4.  D)
+ANSWER  5.  D)
+ANSWER  6.  A),C)
+ANSWER  7.  D)
+ANSWER  8.  C)
+ANSWER  9.  B)
+ANSWER  10.  A),C),D)
+ANSWER  11.  B)
+ANSWER   12.  C),A)
+ANSWER   13.  A)
+ANSWER   14.  B)
+ANSWER   15.What is the difference between find() and find_all() in Beautiful Soup? 
+FIND()---Gets the first tag of the incoming HTML object that satisfies the condition and returns. A function of a label group or a single label.
+Prototype: find(tag, atributes, recursive, text, keywords)
+Parameter tag:Indicates the type of tag you need to find. There can be multiple tags. 
+FIND_ALL()--Get all the conditions of the incoming HTML object and return it.
+Prototype: findAll(tag, atributes, recursive, text, limit, keywords)
+Parameter tag:Indicates the type of tag you need to find. There can be multiple tags.
+
+
+
