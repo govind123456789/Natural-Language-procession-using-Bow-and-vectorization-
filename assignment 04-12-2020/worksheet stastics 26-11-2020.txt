@@ -1,0 +1,71 @@
+Q1 to Q9 have only one correct answer. Choose the correct option to answer your question.
+1. Which of the following is the correct formula for total variation?
+a) Total Variation = Residual Variation – Regression Variation
+b) Total Variation = Residual Variation + Regression Variation
+c) Total Variation = Residual Variation * Regression Variation
+d) All of the mentioned
+ANSWER-A
+2. Collection of exchangeable binary outcomes for the same covariate data are called outcomes.
+a) random
+b) direct
+c) binomial
+d) none of the mentioned
+ANSQWER-C)
+3. How many outcomes are possible with bernoulli trial?
+a) 2
+b) 3
+c) 4
+d) None of the mentioned
+Answer A
+4. If Ho is true and we reject it, then it is called:
+(a) Type-I error
+(b) Type-II error
+(c) Standard error
+(d) Sampling error
+ANSWER - A
+5. Level of significance is also called:
+(a) Power of the test
+(b) Size of the test
+(c) Level of confidence
+(d) Confidence coefficient
+ANSWER-C
+6. The chance of rejecting a true hypothesis decreases when sample size:
+(a) Decreases
+(b) Increases
+(c) Both of them
+(d) None of them
+ANSWER-B
+7. Which of the following testing is concerned with making decisions using data?
+(a) Probability
+(b) Hypothesis
+(c) Causal
+(d) None of the mentioned
+
+ANSWER-B
+8. What is the purpose of multiple testing in statistical inference?
+(a) Minimize errors
+(b) Minimize false positives
+(c) Minimize false negatives
+(d) All of the mentioned
+ANSWER-D
+9. Normalized data is centered at and has unit equal to standard deviations of the original data.
+(a) 0 (b) 5
+(c) 1 (d) 10
+ANSWER-A
+Q10and Q15 are subjective answer type questions, Answer them in your own words briefly.
+10. What Is Bayes' Theorem?
+ANSWER- Bayes’ theorem incorporates prior knowledge while calculating the probability of occurrence of the same in future. So, the bayesian probability of some event B occurring provided the prior knowledge of another event(s) A, given that B is dependent on event A.P(A|B)=P(B|A)P(A)/P(B).
+11. What is z-score?
+ANSWER - A z-score describes the position of a raw score in terms of its distance from the mean when measured in standard deviation units. It is also known as a standard score, because it allows comparison of scores on different kinds of variables by standardizing the distribution.
+12. What is t-test? 
+ANSWER - A t-test measures the difference in group means divided by the pooled standard error of the two group means.A t-test is a statistical test that compares the means of two samples. It is used in hypothesis testing, with a null hypothesis that the difference in group means is zero and an alternate hypothesis that the difference in group means is different from zero
+13. What is a percentile?
+ANSWER-Percentile is a type of quantile which divides the given probability distribution , or sample , into 100 equal-sized intervals: this allows the data to be analyzed in terms of percentage.Formula n=(P/100)*N.
+If your result says you have got 90 percent, then it means 90% of the total marks. So 270 out of 300.
+But if the result says 90 percentile, then that doesn't mean your score is 270. It means your score is better than 90% of the applicants. You may have scored 150, but 90% of the applicants are below that score.
+14. What is ANOVA?
+ANSWER -ANOVA is lknown for ANAlysis for Variance and it is a technique in stastistics that assesses potential differences in a scale-level dependent variable by a nominal-level variable having 2 or more categories.  Their is 2 types of ANOVA i.e1. ONE WAY ANOVA  & TWO WAY ANOVA. 
+15. How can ANOVA help?
+ANSWER - An ANOVA test is a way to find out if survey or experiment results are significant. In other words, they help to figure out if you need to reject the null hypothesis or accept the alternate hypothesis.
+
+Basically, it is  testing groups to see if there’s a difference between them. Example- A group of psychiatric patients are trying three different therapies: counseling, medication and biofeedback. You want to see if one therapy is better than the others.
