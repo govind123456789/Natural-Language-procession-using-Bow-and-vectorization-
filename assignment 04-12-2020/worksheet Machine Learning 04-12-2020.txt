@@ -1,0 +1,10 @@
+ANSWER 1. b),c  
+ANSWER 2. a),c)
+ANSWER 3. b),d)
+ANSWER 4.a),b),c)
+ANSWER 5. a),c)
+ANSWER 6. b),a)
+ANSWER 7. a),c)
+ANSWER 8. b)
+ANSWER 9. c)
+ANSWER 10. C)
