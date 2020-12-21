@@ -1,0 +1,33 @@
+ANSWER
+1. B)
+2. B)
+3.A)
+4. C)
+5.  C)
+6. A)
+7.B)
+8.D)
+9. B),D)
+10. A).C),D)
+11.A), B)
+
+
+
+12. R-squared or R2 explains the degree to which your input variables explain the variation of your output / predicted variable. So, if R-square is 0.8, it means 80% of the variation in the output variable is explained by the input variables. So, in simple terms, higher the R squared, the more variation is explained by your input variables and hence better is your model.
+R2 shows how well terms (data points) fit a curve or line. Adjusted R2 also indicates how well terms fit a curve or line, but adjusts for the number of terms in a model. ... If you add more useful variables, adjusted r-squared will increase. Adjusted R2 will always be less than or equal to R2.
+13.In ML, cost functions are used to estimate how badly models are performing. Put simply, a cost function is a measure of how wrong the model is in terms of its ability to estimate the relationship between X and y. This is typically expressed as a difference or distance between the predicted value and the actual value. The cost function (you may also see this referred to as loss or error.) can be estimated by iteratively running the model to compare estimated predictions against “ground truth” — the known values of y.
+14.The sum of squares total, denoted SST, is the squared differences between the observed dependent variable and its mean. 
+The second term is the sum of squares due to regression, or SSR. It is the sum of the differences between the predicted value and the mean of the dependent variable. 
+The last term is the sum of squares error, or SSE. The error is the difference between the observed value and the predicted value.
+Mathematically, SST = SSR + SSE.
+15.The various metrics used to evaluate the results of the prediction are :
+Mean Squared Error(MSE)
+ It is simply the average of the squared difference between the target value and the value predicted by the regression model. As it squares the differences, it penalizes even a small error which leads to over-estimation of how bad the model is. 
+Root-Mean-Squared-Error(RMSE).
+        RMSE is the most widely used metric for regression tasks and is the square root of the averaged squared difference between the target value and the value predicted by the model. It is preferred more in some cases because the errors are first squared before averaging which poses a high penalty on large errors. 
+Mean-Absolute-Error(MAE).
+       MAE is the absolute difference between the target value and the value predicted by the model. The MAE is more robust to outliers and does not penalize the errors as extremely as mse. 
+R² or Coefficient of Determination.
+	Coefficient of Determination or R² is another metric used for evaluating the performance of a regression model. The metric helps us to compare our current model with a constant baseline and tells us how much our model is better.
+Adjusted R²
+	Adjusted R² depicts the same meaning as R² but is an improvement of it. R² suffers from the problem that the scores improve on increasing terms even though the model is not improving which may misguide the researcher.
